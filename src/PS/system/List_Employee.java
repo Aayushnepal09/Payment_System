@@ -1,14 +1,13 @@
 package PS.system;
 
 //Importing Class
-
 import java.sql.*;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 
-public class List_Employee extends JFrame implements ActionListener{
+public class List_Employee extends JFrame implements ActionListener{ //creating frame
 
+    //declaring table and buttons
     JTable j1;
     JButton b1;
     String h[]={"Emp id","Name","Gender","Address","State","City","Email id","Phone"};
@@ -16,11 +15,12 @@ public class List_Employee extends JFrame implements ActionListener{
     int i=0,j=0;
 
     List_Employee(){
-        super("View Employees");
+        super("View Employees"); //Title name
 
         setSize(1000,400);
         setLocation(450,200);
 
+        //Running sql query
         try{
             String q="select * from employee";
             Conn c1=new Conn();
@@ -43,6 +43,7 @@ public class List_Employee extends JFrame implements ActionListener{
         }
         catch(Exception e){}
 
+                                //Adding button for print
         b1=new JButton("Print");
         add(b1,"South");
         JScrollPane s1=new JScrollPane(j1);
@@ -51,14 +52,17 @@ public class List_Employee extends JFrame implements ActionListener{
         b1.addActionListener(this);
     }
 
+    //adding action perfomer to give response to the buttons
     public void actionPerformed(ActionEvent ae){
         try{
             j1.print();
         }catch(Exception e){}
     }
 
-    public static void main(String s[]){
+    public static void main(String s[])
+    {
         new List_Employee().setVisible(true);
+
     }
 }
 

@@ -15,7 +15,7 @@ public class Conn {
             Class.forName("com.mysql.cj.jdbc.Driver"); //installing driver
             c =DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Payment","root","aayush");//giving path to database
             s =c.createStatement();
-            System.out.println("connected");
+            System.out.println("connected");// printing connecting on console so that we would know database is connected
 
         } catch (Exception e) {
             System.out.println();

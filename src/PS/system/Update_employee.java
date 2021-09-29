@@ -1,24 +1,23 @@
 package PS.system;
 
 //Importing Class
-
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class Update_employee extends JFrame implements ActionListener,ItemListener{
-    JLabel l1,l2,l3,l4,l5,l6,l7,emp;
-    JTextField t1,t2,t3,t4,t5,t6,t7;
-    JButton b1,b2;
-    Choice c1,c2;
+    JLabel l1,l2,l3,l4,l5,l6,l7,emp;//declaring label
+    JTextField t1,t2,t3,t4,t5,t6,t7;//declaring text field
+    JButton b1,b2;//declaring button
+    Choice c1,c2;//declaring choice
 
     Update_employee(){
 
         super("Update Employee");
 
         setLayout(null);
-        getContentPane().setBackground(new Color(114, 204, 198));
+        getContentPane().setBackground(new Color(114, 204, 198));//adding background pane and colour
 
         c2 = new Choice();
         c2.setBounds(160,40,200,20);
@@ -120,11 +119,13 @@ public class Update_employee extends JFrame implements ActionListener,ItemListen
         JLabel l3 = new JLabel(i3);
         l3.setBounds(0,0,1500,800);
         add(l3);
+
+        //setting windows visibility,size and location on screen
         setVisible(true);
         setSize(400,500);
         setLocation(600,200);
     }
-
+    //adding action perfomer to give response to the buttons
     public void actionPerformed(ActionEvent ae){
 
         if(ae.getSource()==b1){
@@ -180,6 +181,7 @@ public class Update_employee extends JFrame implements ActionListener,ItemListen
     }
 
     public static void main(String[] args){
+
         new Update_employee();
     }
 
