@@ -160,7 +160,7 @@ public class New_Employee extends JFrame implements ActionListener{
         b2.setBackground(new Color(20, 164, 164));
         b2.setForeground(Color.WHITE);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/pay.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.png"));
         Image i2 = i1.getImage().getScaledInstance(600,800,Image.SCALE_DEFAULT);
         ImageIcon i3 =  new ImageIcon(i2);
         JLabel l3 = new JLabel(i3);

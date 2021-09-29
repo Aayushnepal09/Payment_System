@@ -37,7 +37,7 @@ class login extends JFrame implements ActionListener{
         add(t2);
 
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.png"));
         Image i2 = i1.getImage().getScaledInstance(600,300,Image.SCALE_DEFAULT);
         ImageIcon i3 =  new ImageIcon(i2);
         JLabel l3 = new JLabel(i3);
