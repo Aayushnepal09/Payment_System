@@ -2,7 +2,7 @@ package PS.system;
 
 //Importing Class
 
-import java.sql.*;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
@@ -10,7 +10,7 @@ import java.awt.event.*;
 
 public class New_Employee extends JFrame implements ActionListener{
     JLabel l0,l1,l2,l3,l4,l5,l6,l7; //declaring label
-    JTextField t0,t1,t2,t3,t4,t5,t6,t7;//declaring text Field
+    JTextField t0,t1,t3,t4,t5,t6,t7;//declaring text Field
     JButton b1,b2; //declaring buttons
     Choice c1;      //declaring options/choice
 

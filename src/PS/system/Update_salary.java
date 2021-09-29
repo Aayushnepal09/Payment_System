@@ -104,7 +104,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         setSize(400,380);
         setLocation(600,200);
     }
-    //adding action perfomer to give response to the buttons
+    //adding action performer to give response to the buttons
     public void actionPerformed(ActionEvent ae){
 
         if(ae.getSource()==b1){

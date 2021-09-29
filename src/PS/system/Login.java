@@ -10,7 +10,7 @@ import java.sql.*;
 
 class login extends JFrame implements ActionListener{  //creating login frame
 
-    JFrame f;
+
     //Creating label,textfield,passwordfield,and buttons for login,password and cancel
     JLabel l1,l2;
     JTextField t1;
@@ -120,6 +120,7 @@ class login extends JFrame implements ActionListener{  //creating login frame
 
 
     public static void main(String[] args){
+
         new login();
     }
 }
