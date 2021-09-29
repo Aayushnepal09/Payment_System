@@ -14,7 +14,7 @@ public class pay_slip extends JFrame implements ActionListener{
     pay_slip(){
 
         setSize(800,700);
-        setLocation(400,150);
+        setLocation(400,100);
         c1 = new Choice();
         try{
             Conn c = new Conn();

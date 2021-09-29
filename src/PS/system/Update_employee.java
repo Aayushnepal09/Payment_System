@@ -134,6 +134,7 @@ public class Update_employee extends JFrame implements ActionListener,ItemListen
                 Conn c1 = new Conn();
                 c1.s.executeUpdate(qry);
                 JOptionPane.showMessageDialog(null,"Employee Updated");
+                dispose();
             }catch(Exception ee){
                 ee.printStackTrace();
             }
@@ -164,6 +165,7 @@ public class Update_employee extends JFrame implements ActionListener,ItemListen
                 t6.setText(rs.getString("email"));
                 t7.setText(rs.getString("phone"));
             }
+
         }catch(Exception ee){
             ee.printStackTrace();
         }
