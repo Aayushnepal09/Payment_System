@@ -1,15 +1,17 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class Update_salary extends JFrame implements ActionListener,ItemListener{
-    JLabel l1,l2,l3,l4,l5,l6;
-    JTextField t1,t2,t3,t4,t5,t6;
-    JButton b1,b2;
-    Choice c2;
+    JLabel l1,l2,l3,l4,l5,l6;//declaring label
+    JTextField t1,t2,t3,t4,t5,t6;//declaring text field
+    JButton b1,b2;//declaring button
+    Choice c2;//declaring choice
 
     Update_salary(){
 
@@ -39,7 +41,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         add(l1);
         add(t1);
 
-        l2 = new JLabel("Da");
+        l2 = new JLabel("Domestic allowance");
         t2 = new JTextField(15);
 
         l2.setBounds(20,100,100,20);
@@ -90,11 +92,19 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
 
         getContentPane().setBackground(new Color(114, 204, 198));
 
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/Nsalary.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(400,380,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,400,380);
+        add(l3);
+
+        //setting windows visibility,size and location on screen
         setVisible(true);
         setSize(400,380);
         setLocation(600,200);
     }
-
+    //adding action perfomer to give response to the buttons
     public void actionPerformed(ActionEvent ae){
 
         if(ae.getSource()==b1){
@@ -151,6 +161,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
     }
 
     public static void main(String[] args){
+
         new Update_salary();
     }
 

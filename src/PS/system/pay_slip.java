@@ -1,24 +1,28 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class pay_slip extends JFrame implements ActionListener{
-
+//Adding button,boolean,textArea
     Choice c1;
     JTextArea t1;
     JButton b1;
 
     pay_slip(){
 
+        //setting windows visibility,size and location on screen
         setSize(800,700);
         setLocation(400,100);
+
         c1 = new Choice();
         try{
             Conn c = new Conn();
-            ResultSet rs = c.s.executeQuery("select * from salary");
+            ResultSet rs = c.s.executeQuery("select * from salary");//Running sql
             while(rs.next()){
                 c1.add(rs.getString("id"));
             }
@@ -45,13 +49,13 @@ public class pay_slip extends JFrame implements ActionListener{
         b1.addActionListener(this);
 
     }
-
+    //adding action performer to give response to the buttons
     public void actionPerformed(ActionEvent e) {
 
         try{
-            Conn c = new Conn();
+            Conn c = new Conn();//connecting to database
 
-            ResultSet rs = c.s.executeQuery("select * from employee where id="+c1.getSelectedItem());
+            ResultSet rs = c.s.executeQuery("select * from employee where id="+c1.getSelectedItem());//running sql
             rs.next();
             String name = rs.getString("name");
             rs.close();
@@ -76,7 +80,7 @@ public class pay_slip extends JFrame implements ActionListener{
                 double hra = rs.getDouble("hra");
                 t1.append("\n                  House Rent Allowance         : "+hra);
                 double da  = rs.getDouble("da");
-                t1.append("\n                  Dearness Allowance          : "+da);
+                t1.append("\n                  Domestic Allowance          : "+da);
                 double med  = rs.getDouble("med");
                 t1.append("\n                  Medical Allowance         : "+med);
                 double pf  = rs.getDouble("pf");
@@ -105,6 +109,7 @@ public class pay_slip extends JFrame implements ActionListener{
 
     }
     public static void main(String[] args){
+
         new pay_slip().setVisible(true);
     }
 }
