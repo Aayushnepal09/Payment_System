@@ -18,14 +18,7 @@ public class New_Employee extends JFrame implements ActionListener{
 
         setSize(600,650);
         setLocation(600,200);
-        //getContentPane().setBackground(new Color(20, 164, 164));
 
-
-
-        /*JPanel p1= new JPanel();
-        p1.setBackground(new Color(12, 117, 148));*/
-
-        //setLayout(new GridLayout(8,2,10,40));
 
         l0 = new JLabel("Emp_id");
         l0.setBounds(30,10,100,30);
@@ -167,7 +160,12 @@ public class New_Employee extends JFrame implements ActionListener{
         b2.setBackground(new Color(20, 164, 164));
         b2.setForeground(Color.WHITE);
 
-
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/pay.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(600,800,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,600,800);
+        add(l3);
 
     }
 

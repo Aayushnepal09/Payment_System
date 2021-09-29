@@ -31,7 +31,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         c2.setBounds(120,20,200,20);
         add(c2);
 
-        l1 = new JLabel("Hra");
+        l1 = new JLabel("House rent allowance");
         t1 = new JTextField(15);
 
         l1.setBounds(20,60,100,20);
@@ -47,7 +47,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         add(l2);
         add(t2);
 
-        l3 = new JLabel("Med");
+        l3 = new JLabel("Medical allowance");
         t3 = new JTextField(15);
 
         l3.setBounds(20,140,100,20);
@@ -55,7 +55,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         add(l3);
         add(t3);
 
-        l4 = new JLabel("Pf");
+        l4 = new JLabel("Provident fund");
         t4 = new JTextField(15);
 
         l4.setBounds(20,180,100,20);
@@ -63,7 +63,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         add(l4);
         add(t4);
 
-        l5 = new JLabel("basic_salary");
+        l5 = new JLabel("basic salary");
         t5 = new JTextField(15);
 
         l5.setBounds(20,220,100,20);

@@ -6,14 +6,17 @@ import java.awt.event.*;
 class project extends JFrame implements ActionListener {
 
     project(){
-        setSize(785,550);
+        super("Salary Management System");
+        setSize(2000,900);
         getContentPane().setBackground(Color.WHITE);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/pay.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(785,496,Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel l1 = new JLabel(i3);
-        add(l1);
+        Image i2 = i1.getImage().getScaledInstance(1500,900,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,1500,800);
+        add(l3);
+
 
         JMenuBar mb = new JMenuBar();
         setJMenuBar(mb);
