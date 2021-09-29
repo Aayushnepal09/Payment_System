@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 class project extends JFrame implements ActionListener {
 
-    project(){
+     project(){
         //adding title
         super("Salary Management System");
 

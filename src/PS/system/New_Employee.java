@@ -178,7 +178,7 @@ public class New_Employee extends JFrame implements ActionListener{
         add(l3);
 
     }
-//adding action perfomer to give response to the buttons
+//adding action performer to give response to the buttons
     public void actionPerformed(ActionEvent ae){
 
         String d = t0.getText();
