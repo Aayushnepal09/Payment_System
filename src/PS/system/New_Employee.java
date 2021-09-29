@@ -20,8 +20,8 @@ public class New_Employee extends JFrame implements ActionListener{
         setLocation(600,200);
 
 
-        l0 = new JLabel("Emp_id");
-        l0.setBounds(30,10,100,30);
+        l0 = new JLabel("Employer id");
+        l0.setBounds(30,10,130,30);
         l0.setFont(new Font("serif",Font.BOLD,25));
         l0.setForeground(new Color(0, 10, 10));
 
@@ -29,7 +29,7 @@ public class New_Employee extends JFrame implements ActionListener{
         t0.setBorder(new LineBorder(new Color(7, 75, 94), 2, true));
         t0.setForeground(new Color(0, 10, 10));
         t0.setBackground(new Color(12, 117, 148));
-        t0.setBounds(150,15,200,25);
+        t0.setBounds(160,15,200,25);
         t0.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
         add(l0);
         add(t0);
@@ -160,7 +160,7 @@ public class New_Employee extends JFrame implements ActionListener{
         b2.setBackground(new Color(20, 164, 164));
         b2.setForeground(Color.WHITE);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.png"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/aaemp.jpg"));
         Image i2 = i1.getImage().getScaledInstance(600,800,Image.SCALE_DEFAULT);
         ImageIcon i3 =  new ImageIcon(i2);
         JLabel l3 = new JLabel(i3);
