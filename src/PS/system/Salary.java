@@ -9,8 +9,8 @@ import java.awt.event.*;
 
 public class Salary extends JFrame implements ActionListener{
 
-    JLabel l1,l2,l3,l4,l5,l6,l7;//adding label
-    JTextField t1,t2,t3,t4,t5,t6,t7;//adding textfield
+    JLabel l1,l3,l4,l5,l6;//adding label
+    JTextField t1,t3,t4,t5,t6;//adding textfield
     JButton b1,b2;//adding button
     Choice c2;//adding choice
 
