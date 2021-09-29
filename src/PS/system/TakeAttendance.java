@@ -1,5 +1,7 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -63,6 +65,8 @@ public class TakeAttendance extends JFrame implements ActionListener{
         b2.addActionListener(this);
 
         getContentPane().setBackground(new Color(175, 231, 227));
+
+
 
         setVisible(true);
         setSize(400,450);

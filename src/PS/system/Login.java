@@ -1,4 +1,6 @@
 package PS.system;
+//Importing Class
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -37,12 +39,7 @@ class login extends JFrame implements ActionListener{
         add(t2);
 
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.png"));
-        Image i2 = i1.getImage().getScaledInstance(600,300,Image.SCALE_DEFAULT);
-        ImageIcon i3 =  new ImageIcon(i2);
-        JLabel l3 = new JLabel(i3);
-        l3.setBounds(0,0,600,300);
-        add(l3);
+
 
 
         b1 = new JButton("Login");
@@ -61,6 +58,13 @@ class login extends JFrame implements ActionListener{
         add(b2);
 
         b2.addActionListener(this);
+
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/coin.png"));
+        Image i2 = i1.getImage().getScaledInstance(600,300,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,600,300);
+        add(l3);
 
         JPanel panel = new JPanel();
         panel.setBorder(new TitledBorder(new LineBorder(new Color(0, 128, 128), 3, true), "Login",

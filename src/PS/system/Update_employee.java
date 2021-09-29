@@ -1,5 +1,7 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
@@ -112,7 +114,12 @@ public class Update_employee extends JFrame implements ActionListener,ItemListen
         b2.addActionListener(this);
 
         c2.addItemListener(this);
-
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/pay.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(1500,900,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,1500,800);
+        add(l3);
         setVisible(true);
         setSize(400,500);
         setLocation(600,200);

@@ -1,5 +1,7 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
@@ -39,7 +41,7 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         add(l1);
         add(t1);
 
-        l2 = new JLabel("Da");
+        l2 = new JLabel("Domestic allowance");
         t2 = new JTextField(15);
 
         l2.setBounds(20,100,100,20);
@@ -89,6 +91,13 @@ public class Update_salary extends JFrame implements ActionListener,ItemListener
         c2.addItemListener(this);
 
         getContentPane().setBackground(new Color(114, 204, 198));
+
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/Nsalary.jpg"));
+        Image i2 = i1.getImage().getScaledInstance(400,380,Image.SCALE_DEFAULT);
+        ImageIcon i3 =  new ImageIcon(i2);
+        JLabel l3 = new JLabel(i3);
+        l3.setBounds(0,0,400,380);
+        add(l3);
 
         setVisible(true);
         setSize(400,380);

@@ -1,5 +1,7 @@
 package PS.system;
 
+//Importing Class
+
 import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
@@ -30,7 +32,7 @@ public class Salary extends JFrame implements ActionListener{
         add(new JLabel("Select Empno"));
         add(c2);
 
-        l1 = new JLabel("HRA");
+        l1 = new JLabel("HR");
         t1 = new JTextField(15);
         add(l1);
         add(t1);
@@ -70,16 +72,13 @@ public class Salary extends JFrame implements ActionListener{
         b2.addActionListener(this);
 
 
+
+
         setSize(450,500);
         setLocation(500,200);
         setVisible(true);
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("PS/icons/aaemp.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(600,800,Image.SCALE_DEFAULT);
-        ImageIcon i3 =  new ImageIcon(i2);
-        JLabel l3 = new JLabel(i3);
-        l3.setBounds(0,0,600,800);
-        add(l3);
+
 
         getContentPane().setBackground(new Color(175, 231, 227));
 
