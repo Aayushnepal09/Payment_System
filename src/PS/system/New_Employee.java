@@ -2,7 +2,7 @@ package PS.system;
 
 //Importing Class
 
-import java.sql.*;
+
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
