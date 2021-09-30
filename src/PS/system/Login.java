@@ -105,13 +105,12 @@ class login extends JFrame implements ActionListener{  //creating login frame
                 ResultSet rs=c1.s.executeQuery(q); // query execute
                 if(rs.next()){                  //verifying login and password
                     new project().setVisible(true);
-                    setVisible(false);
 
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Invalid login");
-                    setVisible(false);
                 }
+                setVisible(false);
             }catch(Exception e){
                 e.printStackTrace();
             }

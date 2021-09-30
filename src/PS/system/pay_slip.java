@@ -94,7 +94,7 @@ public class pay_slip extends JFrame implements ActionListener{
                 t1.append("\n");
 
                 t1.append("\n       GROSS SALARY :"+gross+"    \n       NET SALARY : "+net);
-                t1.append("\n       Tax   :   13% of gross "+ (gross*13/100));
+                t1.append("\n       Tax   :   13% of gross "+ (gross*(13/100)));
                 t1.append("\n -------------------------------------------------");
                 t1.append("\n");
                 t1.append("\n");
